@@ -1,0 +1,115 @@
+/* styles.css or latest-tech-news.component.css */
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for side-by-side display */
+  gap: 10px; /* Space between the cards */
+  max-height: 277px; /* Set the max height for the container */
+  overflow-y: auto; /* Make the container scrollable vertically */
+  padding: 15px;
+  border-radius: 8px;
+  background: #242424;
+  /* background-color: white; */
+}
+
+.news-card {
+  width: 95%; /* Make the card take full width of the grid column */
+  border: 1px solid #f9f9f9;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  /* background-color: #f9f9f9; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  background-color: #dadada;
+  min-height: 115px;
+  max-height: 200px;
+}
+
+.news-card:hover{
+  background-color: #bebebe;
+}
+
+.news-card h3 {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.news-card p {
+  font-size: 1em;
+  /* color: #f9f9f9; */
+  margin: 10px 0;
+}
+
+.news-card a {
+  color: blue;
+  text-decoration: none;
+  /* font-weight: bold; */
+  margin-top: auto;
+  transition: color 0.3s;
+}
+
+.news-card a:hover {
+  color: darkblue;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .news-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .news-card {
+    font-size: 0.9em; /* Slightly smaller text for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .news-container {
+    grid-template-columns: 1fr; /* Stack the cards in a single column on smaller screens */
+    max-height: none; /* Remove max height for better content display on small screens */
+  }
+
+  .news-card {
+    font-size: 0.8em; /* Smaller text for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .news-container {
+    padding: 5px; /* Further reduce padding for very small screens */
+  }
+
+  .news-card {
+    font-size: 0.7em; /* Further reduce text size */
+  }
+}
+
+/* Styling the scrollbar for the news-container */
+.news-container::-webkit-scrollbar {
+  width: 8px;              /* Width of the scrollbar */
+}
+
+.news-container::-webkit-scrollbar-track {
+  background: #d1d1d1;     /* Background of the scrollbar track */
+}
+
+.news-container::-webkit-scrollbar-thumb {
+  background-color: #000;  /* Color of the scrollbar thumb (black) */
+  border-radius: 10px;     /* Rounded corners of the scrollbar thumb */
+  border: 2px solid #d1d1d1; /* Optional: space around the thumb */
+}
+
+.news-container::-webkit-scrollbar-thumb:hover {
+  background: #555;        /* Color on hover for better visibility */
+}
+
+/* For Firefox */
+.news-container {
+  scrollbar-width: thin;   /* Thin scrollbar */
+  scrollbar-color: #000 #d1d1d1; /* Thumb color and track color */
+}
+

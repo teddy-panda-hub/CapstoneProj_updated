@@ -1,0 +1,94 @@
+/* Responsive table for .student-list */
+
+.student-list {
+  padding: 20px;
+  overflow-y: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.back-link {
+  margin: 8px;
+  display: flex;
+}
+
+.back-link a {
+  margin-left: auto;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  th, td {
+      padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  .back-link a {
+      margin-left: auto;
+      margin-right: 20px; /* Center on smaller screens */
+  }
+}
+
+/* Smaller Tablets and Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  th, td {
+      padding: 6px; /* Further reduce padding */
+  }
+
+  th {
+      font-size: 14px; /* Smaller font size for headings */
+  }
+
+  td {
+      font-size: 13px; /* Smaller font size for table content */
+  }
+
+  .back-link a {
+      margin-left: 0; /* Align back-link to left */
+      font-size: 14px; /* Smaller font size */
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .student-list {
+      padding: 10px; /* Reduce padding */
+  }
+
+  th, td {
+      padding: 5px; /* Compact padding */
+      font-size: 12px; /* Smallest font size for mobile */
+  }
+
+  table {
+      display: block; /* Make table scrollable on small screens */
+      overflow-x: auto;
+      white-space: nowrap; /* Prevent table content from wrapping */
+  }
+
+  .back-link a {
+      margin-left: 0;
+      font-size: 12px; /* Smallest font size */
+  }
+}

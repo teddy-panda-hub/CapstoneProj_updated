@@ -1,0 +1,70 @@
+<div class="registration-container">
+    <div class="login-tabs"></div>
+    <div class="registration-form">
+      <h2>Student Registration</h2>
+      <form [formGroup]="registrationForm" (ngSubmit)="submitRegistration()">
+        <!-- Student Name -->
+        <div class="form-group">
+          <label for="studentName">Student Name</label>
+          <input type="text" id="studentName" formControlName="studentName" required placeholder="Enter your full name">
+        </div>
+  
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" formControlName="email" required placeholder="Enter your email">
+        </div>
+  
+        <!-- Username -->
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" formControlName="username" required placeholder="Choose a username">
+        </div>
+  
+        <!-- Mobile -->
+        <div class="form-group">
+          <label for="mobile">Mobile</label>
+          <input type="tel" id="mobile" formControlName="mobile" required placeholder="Enter your mobile number">
+        </div>
+  
+        <!-- Gender -->
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" formControlName="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+  
+        <!-- Address -->
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea id="address" formControlName="address" rows="1" required placeholder="Enter your address"></textarea>
+        </div>
+  
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" formControlName="password" required placeholder="Enter your password">
+        </div>
+  
+        <!-- Courses -->
+        <div class="form-group">
+          <label for="courses">Courses</label>
+          <select id="courses" formControlName="courseIds" multiple>
+            <ng-container *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]">
+              <option [value]="i">Course {{i}}</option>
+            </ng-container>
+          </select>
+        </div>
+  
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit" class="submit-btn">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

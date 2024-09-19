@@ -1,0 +1,23 @@
+<!-- <footer class="footer">
+  
+    <div class="circle-image" (click)="aitutor.open()">
+      <img src="https://static.vecteezy.com/system/resources/previews/036/109/428/non_2x/chatbot-neural-network-ai-servers-and-robots-technology-cute-chatbot-ai-character-vector.jpg" alt="Circle Image">
+    </div>
+  
+    
+  </footer> -->
+  
+  <!-- <div class="footer">
+  
+    <div class="circle-image" (click)="openAITutor()">
+      <img src="https://static.vecteezy.com/system/resources/previews/004/996/790/non_2x/robot-chatbot-icon-sign-free-vector.jpg" alt="AI Assistant">
+    </div>
+    <app-aitutor></app-aitutor>
+  </div> -->
+  <div class="footer">
+    <div class="ai-icon circle-image" (click)="toggleWindow()">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/004/996/790/small_2x/robot-chatbot-icon-sign-free-vector.jpg" alt="AI Icon">
+    </div>
+    <app-aitutor *ngIf="isWindowVisible"></app-aitutor>
+  </div>
+  

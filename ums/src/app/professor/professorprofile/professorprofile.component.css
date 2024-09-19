@@ -1,0 +1,301 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #250c42;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 55px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px; /* Space between nav links */
+    margin-left: 20px; /* Space between logo and nav */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 25px; /* Space between icons */
+    margin-left: auto; /* Pushes icons to the right */
+  }
+  
+  .icons a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 18px; /* Adjust font size as needed */
+  }
+  
+  .icons a:hover {
+    text-decoration: underline;
+  }
+  
+  .icons img {
+    width: 40px; /* Adjust size of the profile image */
+    height: 40px;
+    object-fit: cover; /* Ensures the image covers the circle area without distortion */
+    border-radius: 50%; /* Makes the image a circle */
+  }
+
+
+
+.profile-container {
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 20px; */
+    background-color: #f9f9f9;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  
+  /* .user-details {
+    text-align: center;
+    margin-top: 5px;
+  } */
+  
+  .user-details h2 {
+    margin: 0;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .student-details{
+    height: 387px;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-details{
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    width: 28%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  .reports {
+    position: relative;
+    top: -70px;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    width: 25%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 200px;
+  }
+  
+  .student-details h3,
+  .course-details h3,
+  .reports h3 {
+    margin-top: 0;
+  }
+  
+  .edit-profile {
+    color: blue;
+    text-decoration: underline;
+    float: right;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+
+  .student-header a{
+    margin-top: 0;
+  }
+
+  .student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}  
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 45px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    margin-left: 15px;
+  }
+
+  .icons {
+    gap: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .student-details,
+  .course-details,
+  .reports {
+    width: 100%;
+    height: auto; /* Adjust height for better fit */
+  }
+
+  .course-details {
+    margin-top: 15px; /* Adjust margin for small screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .icons {
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .student-details,
+  .course-details,
+  .reports {
+    width: 100%;
+    margin: 0; /* Remove margin for smaller screens */
+  }
+
+  .student-details {
+    height: auto;
+  }
+
+  .course-details {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .reports {
+    height: auto;
+    top: 0;
+  }
+
+  .avatar img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .user-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    font-size: 14px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .icons a {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 35px;
+  }
+
+  .student-details,
+  .course-details,
+  .reports {
+    padding: 15px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .avatar img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .student-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

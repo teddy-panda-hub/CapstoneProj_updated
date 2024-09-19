@@ -1,0 +1,17 @@
+<div>
+  <div class="side-window">
+    <h3>AI Tutor
+      <span class="close-button" (click)="closeSideWindow()">×</span>
+    </h3>
+    <div class="conversation">
+      <div *ngFor="let message of messages" [ngClass]="message.type" class="message">
+        <strong>{{ message.sender }}:</strong>
+        <div class="message-text">{{ message.text }}</div>
+      </div>
+    </div>
+    <div class="input-box">
+      <input [(ngModel)]="prompt" placeholder="Type your message..." />
+      <button class="send-button" (click)="sendPrompt()">Send</button>
+    </div>
+  </div>
+</div>

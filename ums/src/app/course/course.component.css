@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .courses-container {
+    padding: 20px;
+  }
+  
+  .courses-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .search-sort-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-sort-container input[type="text"] {
+    padding: 10px;
+    width: 400px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .search-sort-container input[type="text"] {
+      width: 300px; /* Adjust width for tablets and smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .search-sort-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .search-sort-container input[type="text"] {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 10px; /* Space between input and sort button */
+  }
+}
+
+@media (max-width: 576px) {
+  .search-sort-container input[type="text"] {
+      width: 100%; /* Full width on mobile screens */
+      font-size: 14px; /* Adjust font size */
+  }
+
+  .courses-list {
+      gap: 10px; /* Reduce gap between cards on smaller screens */
+  }
+}

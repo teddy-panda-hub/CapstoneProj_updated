@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: rgb(255, 251, 247); */
+  background-color: white;
+  height: fit-content;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5px;
+  margin-left: 25px;
+}
+
+.dashboard-container > *:nth-child(1) {
+  grid-column: span 2;
+
+}
+
+.dashboard-container > *:nth-child(2) {
+  grid-row: span 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .dashboard-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens (tablets) */
+    margin-left: 10px;
+  }
+
+  .dashboard-container > *:nth-child(1) {
+    grid-column: span 2; /* Span 2 columns on medium screens */
+  }
+
+  .dashboard-container > *:nth-child(2) {
+    grid-row: span 2; /* Span 2 rows on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    grid-template-columns: 1fr; /* Single column on small screens (phones) */
+    margin-left: 0; /* Remove margin on small screens */
+  }
+
+  .dashboard-container > *:nth-child(1),
+  .dashboard-container > *:nth-child(2) {
+    grid-column: span 1; /* Ensure elements span 1 column on small screens */
+    grid-row: span 1; /* Ensure elements span 1 row on small screens */
+  }
+}

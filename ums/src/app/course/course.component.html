@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<div class="courses-container">
+  <h2>My Courses</h2>
+  <div class="search-sort-container">
+    <input
+      type="text"
+      placeholder="Search"
+      [(ngModel)]="searchTerm"
+      (ngModelChange)="onSearch()"
+    >
+  </div>
+
+  <div class="courses-list">
+    <app-course-card *ngFor="let course of filteredCourses" [course]="course"></app-course-card>
+  </div>
+</div>
+
+<app-footer></app-footer>

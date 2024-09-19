@@ -1,0 +1,251 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #250c42;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 55px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px; /* Space between nav links */
+    margin-left: 20px; /* Space between logo and nav */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 25px; /* Space between icons */
+    margin-left: auto; /* Pushes icons to the right */
+  }
+  
+  .icons a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 18px; /* Adjust font size as needed */
+  }
+  
+  .icons a:hover {
+    text-decoration: underline;
+  }
+  
+  .icons img {
+    width: 40px; /* Adjust size of the profile image */
+    height: 40px;
+    object-fit: cover; /* Ensures the image covers the circle area without distortion */
+    border-radius: 50%; /* Makes the image a circle */
+  }
+  
+  .material-icons {
+    cursor: pointer;
+  }
+  
+
+
+  
+  .courses-container {
+    padding: 20px;
+  }
+  
+  .courses-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .search-sort-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-sort-container input[type="text"] {
+    padding: 10px;
+    width: 400px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .search-sort-container button{
+    height:38px;
+    width:80px;
+    border-radius: 5px;
+  }
+  
+  .courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+
+
+  /* src/app/components/book-list/book-list.component.css */
+.courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    width: calc(20% - 20px); /* 4 cards per row with gap included */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 250px;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  
+  .card-content h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  
+  .card-content p {
+    margin: 0;
+    color: #666;
+  }
+  
+  .card-content a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .card-content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styles */
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 45px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    margin-left: 15px;
+  }
+
+  .icons {
+    gap: 20px;
+  }
+
+  .search-sort-container input[type="text"] {
+    width: 300px;
+  }
+
+  .courses-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: calc(50% - 20px); /* 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .icons {
+    margin-left: 0;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .search-sort-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-sort-container input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .courses-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%; /* Full width for cards on mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    font-size: 14px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .icons a {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 35px;
+  }
+
+  .search-sort-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .search-sort-container button {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%; /* Full width for cards on very small screens */
+  }
+}

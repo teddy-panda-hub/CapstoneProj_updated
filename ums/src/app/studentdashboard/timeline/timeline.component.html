@@ -1,0 +1,9 @@
+<div class="timeline">
+  <h3>Timeline</h3>
+  <div class="display">
+    <ul>
+      <li *ngFor="let assignment of assignments" [routerLink]="['/assignment-upload', assignment.assignment_id]" [queryParams]="{ fileName: assignment.title, deadline: assignment.deadline }">
+              {{ assignment.title }} <br>Deadline: {{assignment.deadline}}</li>
+    </ul>
+  </div>
+</div>

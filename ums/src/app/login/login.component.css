@@ -1,0 +1,237 @@
+/* Reset default styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.header {
+    background-color: #e6e6e6;
+    border-bottom: 10px solid #4a148c;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;  /* Ensure it stays at the top */
+    z-index: 10;         /* Make sure it's above other elements */
+    width: 99.2%;         /* Full width */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.hat-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px); /* Adjust height to leave space for header */
+}
+
+.login-options {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center-align the links */
+    margin-bottom: 20px; /* Space between options and the login card */
+}
+
+.login-link {
+    margin: 0 10px; /* Space between the links */
+    text-decoration: none;
+    color: #4a148c; /* Color matching the theme */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.login-link, .nav>a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.image-section {
+    flex: 3; /* 60% width */
+    overflow: hidden; /* Prevent image overflow */
+    height: 103.5%; /* Make sure image section is the same height as main content */
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%; /* Scale image to fill the height */
+    object-fit: cover; /* Maintain aspect ratio, fill area */
+    border-radius: 5px;
+}
+
+.login-form-section {
+    flex: 2; /* 40% width */
+    display: flex;
+    flex-direction: column; /* Stack links and card vertically */
+    align-items: center; /* Center-align the card */
+    justify-content: center; /* Center-align the whole section */
+    height: 100%; /* Match height of main content */
+}
+
+.login-card {
+    /* background-color: #f3f3f3; */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    width: 90%; /* Slightly narrower to fit within the 40% */
+    max-width: 350px; /* Optional: Set a max-width for better control */
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.university-login-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    /* background-color: #f0f0f0; */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form label {
+    font-size: 18px;
+    color: #000000;
+}
+
+.login-form input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #4a148c;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.reset-btn, .login-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.reset-btn {
+    background-color: #b0b0b0;
+    color: #ffffff;
+}
+
+.login-btn {
+    background-color: #1976d2;
+    color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .header {
+        padding: 10px;
+    }
+
+    .nav a {
+        font-size: 16px; /* Slightly smaller font size for tablets */
+    }
+
+    .login-card {
+        width: 95%; /* Ensure the card fits well on smaller screens */
+    }
+
+    .university-login-btn {
+        font-size: 18px; /* Adjust font size for smaller devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Stack image and login sections vertically */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .image-section, .login-form-section {
+        flex: 1; /* Equal flex for stacking */
+    }
+
+    .image-section img {
+        height: 200px; /* Fixed height for images on smaller screens */
+    }
+
+    .login-card {
+        width: 100%; /* Full width for better fit */
+    }
+
+    .university-login-btn {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .login-form label {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    .forgot-password {
+        font-size: 12px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column; /* Stack header items vertically on very small screens */
+        padding: 10px;
+    }
+
+    .nav a {
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    .login-card {
+        font-size: 12px; /* Smaller font size for very small screens */
+    }
+
+    .university-login-btn {
+        font-size: 14px; /* Further adjust button font size */
+    }
+
+    .login-form label {
+        font-size: 12px; /* Further adjust font size */
+    }
+
+    .forgot-password {
+        font-size: 10px; /* Further adjust font size */
+    }
+}

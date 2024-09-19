@@ -1,0 +1,140 @@
+/* styles.css */
+.login-tabs {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    border: 25px solid #1f185a;
+    background-color: #1f185a;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Container for the registration form */
+.registration-container {
+    width: 100%;
+    max-width: 560px;
+    margin: 30px auto;
+    /* padding: 20px; */
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    margin-bottom: 0px;
+}
+
+/* Form styling */
+.registration-form {
+    width: 500px;
+    /* margin: 20px; */
+    padding: 30px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+/* Form title */
+.registration-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Input and textarea styling */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .registration-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .login-tabs {
+        border-width: 20px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .registration-container {
+        max-width: 90%; /* Slightly reduce the max-width */
+    }
+}
+
+@media (max-width: 768px) {
+    .login-tabs {
+        border-width: 15px;
+        flex-direction: column; /* Stack tabs vertically */
+    }
+
+    .registration-container {
+        max-width: 95%; /* Further reduce the max-width */
+        margin: 20px auto;
+    }
+
+    .registration-form {
+        width: 100%; /* Ensure form takes full width */
+    }
+}
+
+@media (max-width: 576px) {
+    .login-tabs {
+        border-width: 10px;
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+
+    .registration-container {
+        max-width: 100%; /* Full width on very small screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .registration-form {
+        padding: 20px; /* Reduce padding */
+    }
+
+    .submit-btn {
+        font-size: 16px; /* Adjust font size for buttons */
+        padding: 8px; /* Reduce padding */
+    }
+}

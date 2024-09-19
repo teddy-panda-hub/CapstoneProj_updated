@@ -1,0 +1,49 @@
+<div class="registration-container">
+    <div class="login-tabs"></div>
+    <div class="registration-form">
+      <h2>Course Registration</h2>
+      <form [formGroup]="registrationForm" (ngSubmit)="submitRegistration()">
+        <!-- Course Id -->
+        <!-- <div class="form-group">
+          <label for="courseID">Course Id</label>
+          <input type="number" id="courseID" formControlName="courseID" required placeholder="Enter course ID">
+        </div> -->
+        
+        <!-- Course Name -->
+        <div class="form-group">
+          <label for="courseName">Course Name</label>
+          <input type="text" id="courseName" formControlName="courseName" required placeholder="Enter course name">
+        </div>
+  
+        <!-- Description -->
+        <div class="form-group">
+          <label for="description">Course Description</label>
+          <input type="text" id="description" formControlName="description" required placeholder="Enter course description">
+        </div>
+  
+        <!-- Image URL -->
+        <div class="form-group">
+          <label for="imageUrl">Image URL</label>
+          <input type="text" id="imageUrl" formControlName="imageUrl" required placeholder="Provide image URL for the course">
+        </div>
+  
+        <!-- Professor Id -->
+        <div class="form-group">
+          <label for="professorId">Professor Id</label>
+          <input type="number" id="professorId" formControlName="professorId" required placeholder="Enter the professor ID">
+        </div>
+  
+        <!-- Semester -->
+        <div class="form-group">
+          <label for="semester">Semester</label>
+          <textarea id="semester" formControlName="semester" required placeholder="Enter the semester"></textarea>
+        </div>
+  
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit" class="submit-btn">Add Course</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

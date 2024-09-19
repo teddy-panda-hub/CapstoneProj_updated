@@ -1,0 +1,6 @@
+<div class="course-card" >
+  <div class="course-image" [ngStyle]="{'background-image': 'url(' + course.imageUrl + ')'}" routerLink="/coursedetails" (click)="fetchVideos(course.courseName, course.courseId)"></div>  <div class="course-details">
+    <h3>{{ course.courseName }}</h3>
+    <p>{{ course.semester }}</p>
+  </div>
+</div>

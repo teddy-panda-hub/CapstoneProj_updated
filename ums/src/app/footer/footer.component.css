@@ -1,0 +1,66 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /* padding: 10px; */
+  /* background-color: rgb(255, 251, 247); */
+  background-color: white;
+  color: white;
+  width: 100%;
+  display: flex;
+}
+
+.circle-image {
+  width: 70px;  /* Adjust the size as needed */
+  height: 70px;
+  border-radius: 50%;  /* Makes the container a circle */
+  overflow: hidden;  /* Ensures the image fits within the circle */
+  position: absolute;
+  right: 20px;  /* Positioning from the right side of the footer */
+  bottom: 20px; /* Positioning from the bottom of the footer */
+}
+
+.circle-image img {
+  width: 100%; /* Image fills the container */
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the circle area without distortion */
+}
+
+.ai-icon {
+  cursor: pointer;
+}
+
+/* .ai-icon img {
+  width: 30px;
+  height: 30px;
+} */
+
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 8px; /* Reduced padding on smaller screens */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .circle-image {
+    width: 50px;  /* Reduced size for smaller screens */
+    height: 50px;
+    right: 5px; /* Adjusted positioning from the right */
+    bottom: 5px; /* Adjusted positioning from the bottom */
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 5px; /* Further reduced padding on very small screens */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .circle-image {
+    width: 40px;  /* Further reduced size for very small screens */
+    height: 40px;
+    right: 0; /* Align to the right edge */
+    bottom: 0; /* Align to the bottom edge */
+  }
+}

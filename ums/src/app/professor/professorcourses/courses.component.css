@@ -1,0 +1,221 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #250c42;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 55px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Space between nav links */
+  margin-left: 20px; /* Space between logo and nav */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.icons {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 25px; /* Space between icons */
+  margin-left: auto; /* Pushes icons to the right */
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.icons a:hover {
+  text-decoration: underline;
+}
+
+.icons img {
+  width: 40px; /* Adjust size of the profile image */
+  height: 40px;
+  object-fit: cover; /* Ensures the image covers the circle area without distortion */
+  border-radius: 50%; /* Makes the image a circle */
+}
+  
+  
+  
+  .course-container {
+    padding: 20px;
+  }
+  
+  .courses-container h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .search-sort-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .search-sort-container input[type="text"] {
+    padding: 10px;
+    width: 400px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .tab-buttons {
+    display: flex;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font: bold;
+  }
+  
+  .tab-buttons button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 41px;
+  }
+  
+  .tab-line {
+    display: block;
+    height: 2px;
+    background-color: #000;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 45px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    margin-left: 15px;
+  }
+
+  .icons {
+    gap: 20px;
+  }
+
+  .search-sort-container input[type="text"] {
+    width: 300px;
+  }
+
+  .tab-buttons button {
+    padding: 8px 8px;
+    height: 36px;
+  }
+
+  .course-container,
+  .courses-list {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .icons {
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-sort-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-sort-container input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .courses-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+  }
+
+  .tab-buttons button {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    font-size: 16px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .icons a {
+    font-size: 16px;
+  }
+
+  .search-sort-container input[type="text"] {
+    padding: 8px;
+  }
+
+  .tab-buttons button {
+    padding: 6px 6px;
+    font-size: 14px;
+  }
+
+  .course-container {
+    padding: 10px;
+  }
+}

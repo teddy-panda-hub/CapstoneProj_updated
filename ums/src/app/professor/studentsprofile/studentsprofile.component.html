@@ -1,0 +1,57 @@
+<div class="profile-container">
+    <nav class="header">
+      <img src="https://img.icons8.com/?size=100&id=XVdLRePLrKeo&format=png&color=000000" alt="Logo" class="logo">
+      <div class="nav-links">
+          <a routerLink="/professordashboard">Dashboard</a>
+          <a routerLink="/courses">Courses</a>
+      </div>
+      <div class="icons">
+          <a routerLink="/login">Logout</a>
+          <img src="https://th.bing.com/th/id/OIP.Xm1mPsYVbg7zOuX6rWZ-fAAAAA?pid=ImgDet&w=181&h=181&c=7&dpr=1.1" alt="profile" routerLink="/profile">
+      </div>
+    </nav>
+    <main>
+        <div class="user-info">
+          <div class="avatar">
+            <img src="https://th.bing.com/th/id/OIP.rE5rBun5bX9m5Z1OMfPoqgAAAA?w=250&h=250&rs=1&pid=ImgDetMain" alt="User Avatar">
+          </div>
+          <div class="user-details">
+            <h2>{{ student.studentName }}</h2>
+          </div>
+          <div>
+            <!-- <a routerLink="">Edit Profile</a> -->
+          </div>
+          <div>
+            <a routerLink="/professor-coursedetails">Back</a>
+          </div>
+        </div>
+        <div class="content">
+          <div class="student-details">
+              <div class="student-header">
+                  <h3>Student Details</h3>
+                  <!-- <a href="#" class="edit-profile">Edit profile</a> -->
+              </div>
+            <ul>
+              <li>Email address: {{ student.email }}</li>
+              <li>Country: {{ student.country }}</li>
+              <li>Address: {{ student.address }}</li>
+              <li>Contact details: {{ student.mobile }}</li>
+              <li>Timezone: {{ student.timezone }}</li>
+              <li>Pincode: {{ student.pincode }}</li>
+            </ul>
+          </div>
+          <div class="course-details">
+            <h3>Course details</h3>
+            <ul>
+              <li *ngFor="let course of courses">Course ID: {{ course.courseId }} <br> {{course.courseName}}</li>
+            </ul>
+          </div>
+          <div class="reports">
+            <h3>About</h3>
+            <p>College Details</p>
+          </div>
+        </div>
+      </main>
+  
+  </div>
+  

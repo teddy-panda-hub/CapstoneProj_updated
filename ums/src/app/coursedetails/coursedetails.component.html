@@ -1,0 +1,39 @@
+<div class="course-container">
+    <app-header></app-header>
+  
+    <div class="course-content">
+      <h2>Course Name</h2>
+      <div class="tab-buttons">
+        <button (click)="toggleView('resources')" [class.active]="!showAssignments">Resources</button>
+        <button (click)="toggleView('assignments')" [class.active]="showAssignments">Assignments</button>
+        <button routerLink="">Book</button>
+      </div>
+      <div class="tab-line"></div>
+  
+      <div class="card-container">
+        <!-- Resources View -->
+        <div *ngIf="!showAssignments; else assignmentsTemplate">
+          <div class="resources-grid">
+            <div *ngFor="let video of videos" class="card">
+              <a [href]="'https://www.youtube.com/watch?v=' + video.id.videoId" target="_blank">
+                <img [src]="video.snippet.thumbnails.default.url" alt="{{ video.snippet.title }}" />
+              </a>
+              <h4>{{ video.snippet.title }}</h4>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Assignments View -->
+        <ng-template #assignmentsTemplate>
+          <div *ngFor="let assignment of assignments" class="card-2" [routerLink]="['/assignment-upload', assignment.assignment_id]" [queryParams]="{ fileName: assignment.title, deadline: assignment.deadline }">
+            <h4>{{ assignment.title }}</h4>
+            <p>Deadline: {{ assignment.deadline }}</p>
+            <!-- <button >View Details</button> -->
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  
+    <app-footer></app-footer>
+  </div>
+  

@@ -1,0 +1,53 @@
+<div class="profile-container">
+  <nav class="header">
+    <img src="https://img.icons8.com/?size=100&id=XVdLRePLrKeo&format=png&color=000000" alt="Logo" class="logo">
+    <div class="nav-links">
+        <a routerLink="/professordashboard">Dashboard</a>
+        <a routerLink="/courses">Courses</a>
+    </div>
+    <div class="icons">
+        <a routerLink="/login">Logout</a>
+        <img src="https://th.bing.com/th/id/OIP.Xm1mPsYVbg7zOuX6rWZ-fAAAAA?pid=ImgDet&w=181&h=181&c=7&dpr=1.1" alt="profile" routerLink="/profile">
+    </div>
+  </nav>
+  <main>
+    <div class="user-info">
+      <div class="avatar">
+        <img src="https://th.bing.com/th/id/OIP.Y63REB4DsGfjOYZAKmc4GAHaHa?w=626&h=626&rs=1&pid=ImgDetMain" alt="User Avatar">
+      </div>
+      <div class="user-details">
+        <h2>{{ professor?.professorname }}</h2>
+      </div>
+      <!-- <div>
+        <a routerLink="">Edit Profile</a>
+      </div> -->
+      <div>
+        <a routerLink="/login">Logout</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="student-details">
+          <div class="student-header">
+              <h3>Details</h3>
+              <!-- <a href="#" class="edit-profile">Edit profile</a> -->
+          </div>
+        <ul>
+          <li>Email address: {{ professor?.email }}</li>
+          <li>Department: {{ professor?.department }}</li>
+          <li>Contact details: {{ professor?.mobile }}</li>
+          <li>Gender: {{ professor?.gender }}</li>
+        </ul>
+      </div>
+      <div class="course-details">
+        <h3>Course details</h3>
+        <ul>
+          <li *ngFor="let course of professor?.courseIds">Course-{{ course }}</li>
+        </ul>
+      </div>
+      <div class="reports">
+        <h3>About</h3>
+        <p>{{ professor?.degreecompleted }}</p>
+      </div>
+    </div>
+  </main>
+</div>

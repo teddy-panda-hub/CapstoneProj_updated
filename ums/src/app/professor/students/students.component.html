@@ -1,0 +1,34 @@
+<div class="course-container">
+    <nav class="header">
+        <img src="https://img.icons8.com/?size=100&id=XVdLRePLrKeo&format=png&color=000000" alt="Logo" class="logo">
+        <div class="nav-links">
+            <a routerLink="/professordashboard">Dashboard</a>
+            <a routerLink="/courses">Courses</a>
+        </div>
+        <div class="icons">
+            <a routerLink="/login">Logout</a>
+            <img src="https://th.bing.com/th/id/OIP.Xm1mPsYVbg7zOuX6rWZ-fAAAAA?pid=ImgDet&w=181&h=181&c=7&dpr=1.1" alt="profile" routerLink="/professorprofile">
+        </div>
+    </nav>
+    
+    <div class="course-content">
+        <h2>Course Name</h2>
+        <div class="tab-buttons">
+            <!-- <button (click)="gotoStudents()">Students</button> -->
+            <button routerLink="/professor-coursedetails">Assignments</button>
+            <!-- <button routerLink="/assignment" (click)="assign()">Upload Assignments</button> -->
+            <button routerLink="">Book</button>
+        </div>
+        <div class="tab-line"></div>
+  
+        <!-- Main content container -->
+        <div class="card-container">
+            <!-- Students View -->
+            <div *ngFor="let student of students" class="card-2" (click)="goToStudentProfile(student.studentId)">
+              <h4>{{ student.studentName }}</h4>
+              <p>Email: {{ student.email }}</p>
+              <p>Contact: {{ student.mobile }}</p>
+            </div>
+          </div>
+    </div>
+</div>  

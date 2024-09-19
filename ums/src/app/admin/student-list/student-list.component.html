@@ -1,0 +1,29 @@
+<div class="student-list-container">
+    <div class="student-list">
+        <div class="back-link">
+            <h2>Student Details</h2>
+            <a routerLink="/admindashboard">Back to Dashboard</a>
+          </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students">
+            <td>{{ student.studentId }}</td>
+            <td>{{ student.studentName }}</td>
+            <td>{{student.gender}}</td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.mobile }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

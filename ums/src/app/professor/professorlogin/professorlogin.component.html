@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h3>Learning Platform - Login</h3>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <!-- Add this in your <head> section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="roboto-light">
+    <header class="header">
+        <div class="logo">
+            <img src="https://img.icons8.com/?size=100&id=XVdLRePLrKeo&format=png&color=000000" alt="Graduation Hat" class="hat-icon">
+            <h1>Learning Management System</h1>
+        </div>
+        <nav class="nav">        
+            <a routerLink="/adminlogin" class="nav-link"><i class="fas fa-home"></i> Home</a>
+            <a class="login-link" routerLink="/login">Login</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="image-section">
+            <img src="https://astromatrix.app/images/Transit%20in%20Houses/Transit%20Sun%20in%2010th%20House.jpg" alt="Graduation Image">
+        </div>
+        <div class="login-form-section">
+            <div class="login-options">
+              <a class="login-link" routerLink="/login">Student</a>
+              <a class="login-link" routerLink="/professorlogin">Professor</a>
+            </div>
+            <div class="login-card">
+                <button class="university-login-btn">Professor Login</button>
+                <form (submit)="login()" class="login-form">
+                    <label for="username">Enter Username:</label>
+                    <input type="text" id="username" name="username" [(ngModel)]="username" required>
+            
+                    <label for="password">Enter Password:</label>
+                    <input type="password" id="password" name="password" [(ngModel)]="password" required>
+            
+                    <!-- <a href="#" class="forgot-password">Forgot Password?</a> -->
+            
+                    <div class="form-buttons">
+                        <button type="reset" class="reset-btn">Reset</button>
+                        <button type="submit" class="login-btn">Login</button>
+                    </div>
+                </form>
+                <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+            </div> 
+            <!-- src/app/login.component.html-->
+
+        </div>
+    </main>
+</body>
+</html>

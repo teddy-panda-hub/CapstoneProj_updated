@@ -1,0 +1,52 @@
+.attendance {
+  text-align: center;
+  padding: 20px;
+}
+
+.attendance h3 {
+  margin-bottom: 15px;
+}
+
+.chart-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.chart-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .attendance {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .attendance h3 {
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .chart-container {
+    width: 200px; /* Reduce width for tablets */
+    height: 200px; /* Reduce height for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .attendance {
+    padding: 10px; /* Further reduce padding for small screens */
+  }
+
+  .attendance h3 {
+    margin-bottom: 5px; /* Further adjust margin for small screens */
+  }
+
+  .chart-container {
+    width: 150px; /* Further reduce width for very small screens */
+    height: 150px; /* Further reduce height for very small screens */
+  }
+}

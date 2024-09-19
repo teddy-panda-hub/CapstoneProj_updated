@@ -1,0 +1,83 @@
+/* Child Component CSS */
+
+.news-container {
+  display: contents; /* Ensures that the child container does not affect the layout */
+}
+
+.news-card {
+  width: 100%;       /* Make the card take full width of the parent grid column */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.news-image {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.news-card h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.news-card p {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.news-card a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: auto;
+  transition: color 0.3s;
+}
+
+.news-card a:hover {
+  color: darkblue;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .news-card {
+    padding: 15px; /* Adjust padding for tablets */
+  }
+
+  .news-card h2 {
+    font-size: 1.1em; /* Slightly smaller font size for headings on tablets */
+  }
+
+  .news-card p {
+    font-size: 0.9em; /* Slightly smaller font size for text on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .news-card {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .news-card h2 {
+    font-size: 1em; /* Smaller font size for headings on smaller screens */
+  }
+
+  .news-card p {
+    font-size: 0.8em; /* Smaller font size for text on smaller screens */
+  }
+
+  .news-image {
+    max-height: 120px; /* Adjust max height for images on smaller screens */
+  }
+}

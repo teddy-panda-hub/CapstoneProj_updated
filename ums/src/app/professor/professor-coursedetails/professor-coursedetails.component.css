@@ -1,0 +1,253 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #250c42;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 55px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px; /* Space between nav links */
+    margin-left: 20px; /* Space between logo and nav */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 25px; /* Space between icons */
+    margin-left: auto; /* Pushes icons to the right */
+  }
+  
+  .icons a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 18px; /* Adjust font size as needed */
+  }
+  
+  .icons a:hover {
+    text-decoration: underline;
+  }
+  
+  .icons img {
+    width: 40px; /* Adjust size of the profile image */
+    height: 40px;
+    object-fit: cover; /* Ensures the image covers the circle area without distortion */
+    border-radius: 50%; /* Makes the image a circle */
+  }
+  
+  .material-icons {
+    cursor: pointer;
+  }
+
+.course-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .course-content {
+    padding: 10px;
+  }
+  
+  h2 {
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tab-buttons button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .tab-buttons .active {
+    background-color: #bdbdbd;
+  }
+  
+  .tab-line {
+    display: block;
+    height: 2px;
+    background-color: #000;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .syllabus {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .syllabus .icon-chevron-right {
+    margin-left: 5px;
+  }
+  
+  .card-container {
+    margin-top: 10px;
+  }
+
+  .card-container p{
+    margin-top: 0px;
+  }
+  
+  /* Styles for Resources cards */
+  .resources-grid {
+    display: flex;           /* Enables flex layout */
+    flex-wrap: wrap;         /* Allows items to wrap */
+    gap: 20px;               /* Space between cards */
+    justify-content: space-between; /* Distribute space evenly */
+  }
+  
+  .card {
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    flex: 1 1 calc(25% - 20px); /* 4 cards per row with gap */
+    margin: 10px;              /* Space around each card */
+    box-sizing: border-box;
+    min-width: 200px;          /* Minimum width for responsiveness */
+    max-width: 450px;          /* Maximum width to prevent overflow */
+    height: auto;              /* Auto height based on content */
+  }
+  
+  .card:hover{
+    transform: scale(0.9);
+    background-color: #d8d8d8;
+    font-family: Arial, sans-serif;
+    font: bold;
+  }
+  
+  h4 {
+    margin: 5px;
+  }
+  
+  /* Styles for Assignments cards */
+  .card-2 {
+    background-color: #ececec;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 100%;             /* Full width to stretch across the container */
+    max-width: 600px;        /* Optional: Maximum width to prevent it from being too wide */
+    margin-bottom: 10px;     /* Space between cards for separation */
+    height: 60px;            /* Auto height based on content */
+    box-sizing: border-box;
+  }
+  
+  /* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .header {
+      padding: 10px 15px;
+  }
+
+  .logo {
+      width: 50px;
+      height: 45px;
+  }
+
+  .nav-links {
+      gap: 15px;
+      margin-left: 15px;
+  }
+
+  .icons {
+      gap: 20px;
+  }
+
+  .file-submission {
+      width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .logo {
+      margin-bottom: 10px;
+  }
+
+  .nav-links {
+      margin-left: 0;
+      justify-content: center;
+      margin-bottom: 10px;
+  }
+
+  .icons {
+      margin-left: 0;
+      justify-content: center;
+      gap: 15px;
+  }
+
+  .file-submission {
+      width: 100%;
+      max-width: none;
+  }
+
+  .assignment-details {
+      grid-template-columns: 1fr;
+  }
+
+  input {
+      width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+      font-size: 18px;
+  }
+
+  .nav-links a {
+      font-size: 16px;
+  }
+
+  .icons a {
+      font-size: 16px;
+  }
+
+  .file-submission,
+  .assignment-header {
+      padding: 15px;
+  }
+
+  .save-btn,
+  .cancel-btn {
+      padding: 8px 20px;
+      font-size: 14px;
+  }
+}

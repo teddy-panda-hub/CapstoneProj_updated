@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #250c42;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 55px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Space between nav links */
+  margin-left: 20px; /* Space between logo and nav */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.icons {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 25px; /* Space between icons */
+  margin-left: auto; /* Pushes icons to the right */
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.icons a:hover {
+  text-decoration: underline;
+}
+
+.icons img {
+  width: 40px; /* Adjust size of the profile image */
+  height: 40px;
+  object-fit: cover; /* Ensures the image covers the circle area without distortion */
+  border-radius: 50%; /* Makes the image a circle */
+}
+
+.material-icons {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .header {
+    font-size: 18px; /* Slightly smaller font size on tablets */
+  }
+
+  .logo {
+    width: 50px; /* Smaller logo on tablets */
+    height: 45px;
+  }
+
+  .nav-links {
+    gap: 15px; /* Reduce space between nav links */
+    margin-left: 15px; /* Adjust space between logo and nav */
+  }
+
+  .icons {
+    gap: 20px; /* Reduce space between icons */
+  }
+
+  .icons img {
+    width: 35px; /* Smaller profile image */
+    height: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack header elements vertically */
+    align-items: flex-start; /* Align items to the start */
+    font-size: 16px; /* Further reduce font size */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack nav links vertically */
+    gap: 10px; /* Space between nav links */
+    margin-left: 0; /* Remove margin */
+  }
+
+  .icons {
+    gap: 15px; /* Reduce space between icons */
+  }
+
+  .icons img {
+    width: 30px; /* Smaller profile image for mobile */
+    height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 10px 15px; /* Reduce padding on small screens */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .logo {
+    width: 40px; /* Further reduce logo size */
+    height: 35px;
+  }
+
+  .nav-links {
+    gap: 8px; /* Further reduce space between nav links */
+  }
+
+  .icons {
+    gap: 10px; /* Further reduce space between icons */
+  }
+
+  .icons img {
+    width: 25px; /* Further reduce profile image size */
+    height: 25px;
+  }
+}

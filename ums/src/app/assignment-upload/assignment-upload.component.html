@@ -1,0 +1,42 @@
+<div class="assignment-container">
+  <div class="assignment-header">
+    <h2>Assignment</h2>
+    <div class="assignment-dates">
+      <p><strong>Deadline:</strong> {{ deadline }}</p>
+      <div class="question-file-section">
+        <button class="file-button" (click)="viewAssignmentFile()">
+          <i class="icon">📄</i> View
+        </button>
+        <button class="file-button" (click)="downloadAssignmentFile()">
+          <i class="icon">⬇️</i> Download
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="submission-status">
+    <h3>Submission</h3>
+    <label for="question">Question:</label>
+    <p>{{ question }}</p> <!-- Assuming question is fetched -->
+
+    <!-- Flex container to align textarea and score horizontally -->
+    <div class="answer-container">
+      <label for="answer">Your Answer:</label><br>
+      <textarea [(ngModel)]="answer" id="answer" cols="55" rows="8"></textarea>
+
+      <!-- Display the score beside the textarea in red -->
+      <div *ngIf="evaluationScore !== null" class="score-display">
+        Score: <br><span>{{ evaluationScore }}</span>
+      </div>
+    </div>
+
+    <div class="save-cancel-buttons">
+      <button class="save-button" (click)="submitAssignment()">Submit</button>
+    </div>
+
+    <div *ngIf="evaluationResult">
+      <h3>Evaluation Result</h3>
+      <p>Your marks: {{ evaluationResult }}</p>
+    </div>
+  </div>
+</div>

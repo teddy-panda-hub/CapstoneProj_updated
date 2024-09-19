@@ -1,0 +1,35 @@
+/* Base styles */
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+mat-calendar {
+  width: 350px; /* Default width */
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.8);
+  z-index: 0;
+  background-color: white;
+}
+
+mat-calendar-header {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  mat-calendar {
+    width: 300px; /* Adjust width for tablets */
+    margin-top: 5px; /* Adjust margin for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  mat-calendar {
+    width: 250px; /* Further adjust width for small screens */
+    margin-top: 0; /* Adjust margin for small screens */
+  }
+}

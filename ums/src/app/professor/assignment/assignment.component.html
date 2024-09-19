@@ -1,0 +1,55 @@
+<nav class="header">
+    <img src="https://img.icons8.com/?size=100&id=XVdLRePLrKeo&format=png&color=000000" alt="Logo" class="logo">
+    <div class="nav-links">
+        <a routerLink="/professordashboard">Dashboard</a>
+        <a routerLink="/courses">Courses</a>
+    </div>
+    <div class="icons">
+        <!-- <i class="material-icons">notifications</i>
+        <i class="material-icons">chat</i> -->
+        <a routerLink="/login">Logout</a>
+        <img src="https://th.bing.com/th/id/OIP.Xm1mPsYVbg7zOuX6rWZ-fAAAAA?pid=ImgDet&w=181&h=181&c=7&dpr=1.1" alt="profile" routerLink="/profile">
+    </div>
+</nav>
+<div class="assignment-container">
+    <button routerLink="/professor-coursedetails" style="margin-top: 10px; margin-left: 20px; padding: 8px; border-radius: 5px;">Assignments</button>
+
+    <h2>Assignment</h2>
+    <div class="assignment-header">
+        <div class="assignment-details">
+            <label for="assignmentId">Assignment Id:</label>
+            <input id="assignmentId" type="number" [(ngModel)]="assignmentId" required>
+    
+            <label for="title">Assignment Title:</label>
+            <input id="title" type="text" [(ngModel)]="title" required>
+    
+            <label for="deadline">Deadline:</label>
+            <input id="deadline" type="date" (change)="onDeadlineChange($event)" required>
+        </div>
+    </div>
+    
+
+    <div class="submission-section">
+        <h3>Add Submission</h3>
+        <div class="file-submission">
+            <div class="file-icons">
+                <p>File Submission</p>
+                <div class="uploadicons">
+                    <i class="upload-icon">📄</i>
+                    <i class="folder-icon">📁</i>
+                    <i class="clipboard-icon">📋</i>
+                </div>
+            </div>
+            <div class="tab-line"></div>
+            <div class="uploaded-file">
+                <p></p>
+                <input type="file" (change)="onFileSelected($event)" required>
+            </div>
+        </div>
+
+        <div class="submission-buttons">
+            <button class="save-btn"  (click)="onUpload(assignmentId, title, deadline)">Submit</button>
+            <button class="cancel-btn">Cancel</button>
+        </div>
+    </div>
+</div>

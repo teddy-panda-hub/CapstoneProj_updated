@@ -1,0 +1,73 @@
+<div class="dashboard-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="profile-section">
+        <img src="https://www.shareicon.net/data/2016/07/08/116927_man_512x512.png" alt="Admin Image" class="profile-img">
+        <div class="profile-name">admin</div>
+      </div>
+      <ul class="menu">
+        <li><a routerLink="/profregistration">Add Professor</a></li>
+        <li><a routerLink="/registration">Add Student </a></li>
+        <li><a routerLink="/cours-reg">Add Course</a></li>
+        <li><a routerLink=""></a></li>
+      </ul>
+    </div>
+  
+    <!-- Main content -->
+    <div class="main-content">
+        <div class="header">
+            <h1>Welcome to Admin Dashboard</h1>
+            <div class="top-right-menu">
+              <a routerLink="/admindashboard"><i class="home-icon"></i> Home</a>
+              <!-- <a href="#"><i class="user-icon"></i> Welcome admin@gmail.com</a> -->
+              <a routerLink="/adminlogin"><i class="logout-icon"></i> Logout</a>
+            </div>
+        </div>
+      <!-- Dashboard Cards -->
+      <div class="cards">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://cdn0.iconfinder.com/data/icons/PRACTIKA/128/user.png" alt="User Icon">
+            </div>
+            <div class="card-details" routerLink="/student-list">
+              <h3>Users</h3>
+              <p class="count">{{ totalStudents }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://th.bing.com/th/id/OIP.Y63REB4DsGfjOYZAKmc4GAHaHa?w=626&h=626&rs=1&pid=ImgDetMain" alt="Professor Icon">
+            </div>
+            <div class="card-details" routerLink="/professor-list">
+              <h3>Professors</h3>
+              <p class="count">{{ totalProfessors }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://th.bing.com/th/id/OIP.pW1bzDqBzcniKOQI429m0wHaHa?w=612&h=612&rs=1&pid=ImgDetMain" alt="Course Icon">
+            </div>
+            <div class="card-details" routerLink="/course-list">
+              <h3>Courses</h3>
+              <p class="count">{{ totalCourses }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card-5">
+            <!-- <div class="card-content">
+                <div class="card-image">
+                    <img src="https://th.bing.com/th/id/OIP.pW1bzDqBzcniKOQI429m0wHaHa?w=612&h=612&rs=1&pid=ImgDetMain" alt="Course Icon" style="width: 100px; height: 100px;">
+                </div>
+                <div class="card-details">
+                    <h3></h3>
+                </div>
+            </div> -->
+        </div>
+      </div>      
+    </div>
+</div>

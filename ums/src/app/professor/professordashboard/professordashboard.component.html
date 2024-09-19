@@ -1,0 +1,78 @@
+<!-- <nav class="header">
+    <img src="https://img.icons8.com/?size=100&id=XVdLRePLrKeo&format=png&color=000000" alt="Logo" class="logo">
+    <div class="nav-links">
+        <a routerLink="/professordashboard">Dashboard</a>
+    </div>
+    <div class="icons">
+        <a routerLink="/login">Logout</a>
+        <img src="https://th.bing.com/th/id/OIP.Xm1mPsYVbg7zOuX6rWZ-fAAAAA?pid=ImgDet&w=181&h=181&c=7&dpr=1.1" alt="profile" routerLink="/professorprofile">
+    </div>
+</nav>
+<div class="main-content">
+    <div class="cards">
+        <div class="card">
+          <div class="card-content" routerLink="/courses">
+                <div class="card-image">
+                <img src="https://th.bing.com/th/id/OIP.pW1bzDqBzcniKOQI429m0wHaHa?w=612&h=612&rs=1&pid=ImgDetMain" alt="Course Icon" style="width: 100px; height: 100px;">
+                </div>
+                <div class="card-details">
+                <h3>Courses</h3>
+                </div>
+          </div>
+        </div>
+    </div>
+    <app-calender></app-calender>
+</div> -->
+
+<nav class="header">
+    <img src="https://img.icons8.com/?size=100&id=XVdLRePLrKeo&format=png&color=000000" alt="Logo" class="logo">
+    <div class="nav-links">
+        <a routerLink="/professordashboard">Dashboard</a>
+    </div>
+    <div class="icons">
+        <a routerLink="/login">Logout</a>
+        <img src="https://th.bing.com/th/id/OIP.Xm1mPsYVbg7zOuX6rWZ-fAAAAA?pid=ImgDet&w=181&h=181&c=7&dpr=1.1" alt="profile" routerLink="/professorprofile">
+    </div>
+</nav>
+
+<div class="main-content">
+    <!-- New Container for Grid Layout -->
+    <div class="dashboard-container">
+        <div class="cards">
+            <div class="card">
+                <div class="card-content" routerLink="/courses">
+                    <div class="card-image">
+                        <img src="https://th.bing.com/th/id/OIP.pW1bzDqBzcniKOQI429m0wHaHa?w=612&h=612&rs=1&pid=ImgDetMain" alt="Course Icon" style="width: 100px; height: 100px;">
+                    </div>
+                    <div class="card-details">
+                        <h3>Courses</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="card">
+                <div class="card-content" routerLink="/studentlist">
+                    <div class="card-image">
+                        <img src="https://cdn0.iconfinder.com/data/icons/PRACTIKA/128/user.png" alt="Course Icon" style="width: 100px; height: 100px;">
+                    </div>
+                    <div class="card-details">
+                        <h3>Students</h3>
+                    </div>
+                </div>
+            </div> -->
+            <div class="card">
+                <div class="card-content" routerLink="/resourcecenter">
+                    <div class="card-image">
+                        <img src="https://th.bing.com/th/id/OIP.BQ5RCwxuLTKtW_7SR-rJ1gHaGW?rs=1&pid=ImgDetMain" alt="Course Icon" style="width: 100px; height: 100px;">
+                    </div>
+                    <div class="card-details">
+                        <h3>Resource Center</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calendar Component -->
+        <app-calender></app-calender>
+    </div>
+</div>
+<app-footer></app-footer>

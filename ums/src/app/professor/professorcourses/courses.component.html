@@ -1,0 +1,39 @@
+<nav class="header">
+    <img src="https://img.icons8.com/?size=100&id=XVdLRePLrKeo&format=png&color=000000" alt="Logo" class="logo">
+    <div class="nav-links">
+        <a routerLink="/professordashboard">Dashboard</a>
+        <!-- <a routerLink="/courses">Courses</a> -->
+    </div>
+    <div class="icons">
+        <!-- <i class="material-icons">notifications</i>
+        <i class="material-icons">chat</i> -->
+        <a routerLink="/login">Logout</a>
+        <img src="https://th.bing.com/th/id/OIP.Xm1mPsYVbg7zOuX6rWZ-fAAAAA?pid=ImgDet&w=181&h=181&c=7&dpr=1.1" alt="profile" routerLink="/professorprofile">
+    </div>
+</nav>
+<div class="course-container">  
+    <div class="course-content">
+        <h2>My Courses</h2>
+        <div class="tab-buttons">
+            <div class="search-sort-container">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  [(ngModel)]="searchTerm"
+                  (ngModelChange)="onSearch()"
+                >
+              </div>
+            <button routerLink="/courses">Courses</button>
+            <!-- <button routerLink="/assignment">Upload Assignment</button> -->
+            <!-- <button routerLink="">Book</button> -->
+        </div>
+        <div class="tab-line"></div>
+  
+        <!-- Main content container -->
+        <div class="card-container">
+            <div *ngIf="courses" class="courses-list">
+                <app-profcoursecard *ngFor="let course of filteredCourses" [course]="course"></app-profcoursecard>
+            </div>
+    </div>
+</div>
+  

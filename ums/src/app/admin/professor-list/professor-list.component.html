@@ -1,0 +1,33 @@
+<div class="professor-list-container">
+    <div class="professor-list">
+      <div class="back-link">
+        <h2>Professor Details</h2>
+        <a routerLink="/admindashboard">Back to Dashboard</a>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Professor ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Experience</th>
+            <th>Gender</th>
+            <th>Mobile</th>
+            <th>Degree Completed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let professor of professors">
+            <td>{{ professor.professorId }}</td>
+            <td>{{ professor.professorname }}</td>
+            <td>{{ professor.email }}</td>
+            <td>{{ professor.experience }}</td>
+            <td>{{ professor.gender }}</td>
+            <td>{{ professor.mobile }}</td>
+            <td>{{ professor.degreecompleted }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

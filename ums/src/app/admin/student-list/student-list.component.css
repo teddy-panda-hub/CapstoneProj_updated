@@ -1,0 +1,88 @@
+/* Base CSS */
+.student-list {
+  padding: 20px;
+  overflow-y: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.back-link {
+  margin: 8px;
+  display: flex;
+}
+
+.back-link a {
+  margin-left: 800px;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE STYLING */
+
+/* For Tablets and Smaller Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  th, td {
+      padding: 8px; /* Reduce padding */
+      font-size: 16px; /* Adjust font size for readability */
+  }
+  
+  .back-link a {
+      margin-left: auto; /* Align link to the right */
+      margin-right: 20px;
+      font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* For Smaller Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  th, td {
+      padding: 6px; /* Further reduce padding */
+      font-size: 14px; /* Smaller font size */
+  }
+  
+  table {
+      font-size: 14px; /* Adjust table font size */
+  }
+
+  .back-link a {
+      margin-left: auto;
+      margin-right: 10px; /* Reduce margin on smaller screens */
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* For Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .student-list {
+      padding: 10px; /* Reduce padding for mobile */
+  }
+  
+  th, td {
+      padding: 5px; /* Reduce padding for mobile */
+      font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  table {
+      display: block; /* Allow horizontal scrolling */
+      overflow-x: auto;
+      white-space: nowrap; /* Prevent table content from wrapping */
+  }
+
+  .back-link a {
+      margin-left: 0; /* Align back-link to the left */
+      font-size: 12px; /* Adjust font size for mobile */
+      text-align: center; /* Center the text */
+  }
+}

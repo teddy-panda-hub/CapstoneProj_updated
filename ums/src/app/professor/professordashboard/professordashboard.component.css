@@ -1,0 +1,222 @@
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #250c42;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+.logo {
+    width: 60px;
+    height: 55px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.icons a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.icons a:hover {
+    text-decoration: underline;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.main-content {
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Auto width for the card, remaining space for the calendar */
+    grid-gap: 20px; /* Space between the card and calendar */
+    padding: 15px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #e9e9e9;
+    box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    margin: 20px;
+    /* padding: 10px; */
+    width: 700px; /* Set width to maintain the original card size */
+    text-align: left;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    opacity: 0.9;
+    transform: scale(0.95);
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-image {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.card-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.card-details {
+    flex-grow: 1;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 45px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    margin-left: 15px;
+  }
+
+  .icons {
+    gap: 20px;
+  }
+
+  .dashboard-container {
+    grid-template-columns: 1fr; /* Stack card and calendar vertically */
+  }
+
+  .card {
+    width: 100%; /* Make card width responsive */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    margin-top: 10px;
+    flex-direction: column; /* Stack nav links vertically */
+  }
+
+  .icons {
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .main-content {
+    padding: 5px;
+  }
+
+  .dashboard-container {
+    grid-template-columns: 1fr; /* Stack card and calendar vertically */
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0; /* Adjust margins for small screens */
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    font-size: 14px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .icons a {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 35px;
+  }
+
+  .card {
+    height: auto; /* Adjust card height for smaller screens */
+    margin: 5px 0;
+    width: 100%; /* Ensure card takes full width */
+  }
+
+  .card-content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start;
+  }
+
+  .card-image img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+}

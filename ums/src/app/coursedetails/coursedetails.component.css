@@ -1,0 +1,152 @@
+.course-container {
+  font-family: Arial, sans-serif;
+}
+
+.course-content {
+  padding: 10px;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tab-buttons .active {
+  background-color: #bdbdbd;
+}
+
+.tab-line {
+  display: block;
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.syllabus {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.syllabus .icon-chevron-right {
+  margin-left: 5px;
+}
+
+.card-container {
+  margin-top: 10px;
+}
+
+/* Styles for Resources cards */
+.resources-grid {
+  display: flex;           /* Enables flex layout */
+  flex-wrap: wrap;         /* Allows items to wrap */
+  gap: 20px;               /* Space between cards */
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+.card {
+  background-color: #ececec;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  flex: 1 1 calc(25% - 20px); /* 4 cards per row with gap */
+  margin: 10px;              /* Space around each card */
+  box-sizing: border-box;
+  min-width: 200px;          /* Minimum width for responsiveness */
+  max-width: 450px;          /* Maximum width to prevent overflow */
+  height: auto;              /* Auto height based on content */
+}
+
+.card:hover{
+  transform: scale(0.9);
+  background-color: #d8d8d8;
+  font-family: Arial, sans-serif;
+  font: bold;
+}
+
+h4 {
+  margin: 3px;
+}
+
+img{
+  width: 100%;
+  border-radius: 5px;
+  height:150px;
+  display: flex;
+  align-self: centers;
+}
+
+/* Styles for Assignments cards */
+.card-2 {
+  background-color: #ececec;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 100%;             /* Full width to stretch across the container */
+  max-width: 600px;        /* Optional: Maximum width to prevent it from being too wide */
+  margin-bottom: 10px;     /* Space between cards for separation */
+  height: 60px;            /* Auto height based on content */
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0px;
+  margin-left: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 calc(33.33% - 20px); /* 3 cards per row for tablets */
+  }
+
+  .card-2 {
+    max-width: 100%; /* Full width for assignment cards */
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    flex: 1 1 100%; /* 1 card per row for mobile screens */
+    min-width: 100%; /* Ensure full width */
+  }
+
+  .card-2 {
+    width: 100%; /* Full width for assignment cards on mobile */
+  }
+
+  .tab-buttons button {
+    padding: 8px 16px; /* Smaller padding on mobile screens */
+    font-size: 12px; /* Smaller font size */
+  }
+}
