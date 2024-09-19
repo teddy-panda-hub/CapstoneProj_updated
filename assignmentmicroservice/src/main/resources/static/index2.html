@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This is for viewing and downloading assignment file-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>View or Download File</h1>
+    <iframe src="/assignments/showAssignmentFileById/1233" title="File Viewer"></iframe>
+    <a href="/assignments/download/1233" download>Download File</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+#spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+# Maximum file size (e.g., 10MB)
+#spring.servlet.multipart.max-file-size=100MB
+
+spring:
+  application:
+    name: course
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: pass@word1
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 0
+
+
+eureka:
+  client:
+    registerWithEureka: true        # Registers this service with the Eureka server
+    fetchRegistry: true             # Fetches the registry from the Eureka server
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/  # URL of the Eureka server to connect with
+  instance:
+    hostname: localhost             # The hostname of the instance
+    instance-id: "${spring.application.name}:${instanceId:${random.value}}"  # Instance ID, with dynamic values
+
+

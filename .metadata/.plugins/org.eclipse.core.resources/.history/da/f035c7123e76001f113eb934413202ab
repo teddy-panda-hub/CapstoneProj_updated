@@ -1,0 +1,83 @@
+package com.gemini.serviceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+
+@Service
+public class GeminiService {
+
+	@Autowired
+	private RestTemplate restTemplate;
+
+	private final String API_URL_TEMPLATE = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=%s";
+
+	@Value("${gemini.api.key}")
+    private String geminiKey;
+	
+	public String callApi(String prompt) {
+        String apiUrl = String.format(API_URL_TEMPLATE, geminiKey);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Content-Type", "application/json");
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        ObjectNode contentNode = objectMapper.createObjectNode();
+        ObjectNode partsNode = objectMapper.createObjectNode();
+        partsNode.put("text", prompt);
+        contentNode.set("parts", objectMapper.createArrayNode().add(partsNode));
+        ObjectNode requestBodyNode = objectMapper.createObjectNode();
+        requestBodyNode.set("contents", objectMapper.createArrayNode().add(contentNode));
+        
+        String requestBody;
+        try {
+            requestBody = objectMapper.writeValueAsString(requestBodyNode);
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to construct JSON request body", e);
+        }
+
+        HttpEntity<String> request = new HttpEntity<>(requestBody, headers);
+
+        ResponseEntity<String> response = restTemplate.exchange(apiUrl, HttpMethod.POST, request, String.class);
+
+        return response.getBody();
+    }
+	
+	public String evaluateAssignment(String question, String answer) {
+	    // Construct the prompt for evaluation
+	    String prompt = String.format(
+	        "Evaluate the relevance of the following answer to the given question on a scale of 1 to 5, with 5 being the most relevant.\n\n" +
+	        "Question: %s\n" +
+	        "Answer: %s\n\n" +
+	        "Provide only the score in numeric format.", question, answer);
+
+	    // Call the API with the constructed prompt
+	    String apiResponse = callApi(prompt);
+
+	    try {
+	        // Parse the API response to extract the score from the "text" field
+	        ObjectMapper objectMapper = new ObjectMapper();
+	        JsonNode rootNode = objectMapper.readTree(apiResponse);
+	        JsonNode scoreNode = rootNode.path("candidates").path(0).path("content").path("parts").path(0).path("text");
+
+	        // Trim any whitespace and extract the score as a string
+	        String scoreText = scoreNode.asText().trim();
+
+	        // Return the score (in this case, as a string)
+	        return scoreText;
+
+	    } catch (Exception e) {
+	        throw new RuntimeException("Failed to parse the score from the API response", e);
+	    }
+	}
+
+}

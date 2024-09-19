@@ -1,0 +1,842 @@
+!SESSION 2024-09-17 14:48:46.433 -----------------------------------------------
+eclipse.buildId=4.22.1.202405011620
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-09-17 14:48:49.171
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-17 14:48:49.564
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-17 14:49:07.248
+!MESSAGE Logback config file: C:\Users\Administrator\Documents\NewSpringWorkSpace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-09-17 14:49:07.949
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-17 14:49:07.949
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-09-17 14:49:08.386
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-17 14:49:08.386
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-09-17 14:49:13.302
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-09-17 14:53:59.011 -----------------------------------------------
+eclipse.buildId=4.22.1.202405011620
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-09-17 14:54:01.058
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-17 14:54:01.465
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-17 14:54:05.761
+!MESSAGE Logback config file: C:\Users\Administrator\Documents\NewSpringWorkSpace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-09-17 14:54:06.368
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-17 14:54:06.368
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-09-17 14:54:06.795
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-17 14:54:06.795
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-09-17 14:54:11.025
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:55:51.463
+!MESSAGE Classpath changed for project: AITutor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:55:53.115
+!MESSAGE Classpath changed for project: AITutor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:55:53.116
+!MESSAGE Boot project ADDED: AITutor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:55:53.118
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:55:53.194
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-17 14:55:53.202
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Softwares\sts-4.22.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre\bin\javaw.exe
+-cp
+D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes;D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/Administrator/Documents/NewSpringWorkSpace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1726565153202
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:55:53.203
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-17 14:55:53.208
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10364
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:55:54.042
+!MESSAGE Classpath changed for project: AITutor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:57:39.619
+!MESSAGE Classpath changed for project: assignmentmicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:57:41.097
+!MESSAGE Classpath changed for project: assignmentmicroservice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-17 14:57:41.143
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-17 14:57:41.146
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:00.381
+!MESSAGE Classpath changed for project: assignmentmicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:00.403
+!MESSAGE Boot project ADDED: assignmentmicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:00.506
+!MESSAGE Classpath changed for project: assignmentmicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:06.444
+!MESSAGE Classpath changed for project: coursemicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:06.848
+!MESSAGE Classpath changed for project: coursemicroservice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-17 14:58:07.000
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-17 14:58:07.003
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-09-17 14:58:08.875
+!MESSAGE The POM for com.project.ums:UsermanagementLMS:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:10.081
+!MESSAGE Classpath changed for project: coursemicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:10.082
+!MESSAGE Boot project ADDED: coursemicroservice
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-09-17 14:58:11.006
+!MESSAGE Could not download sources for com.project.ums:UsermanagementLMS:0.0.1-SNAPSHOT
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.project.ums:UsermanagementLMS:jar:sources:0.0.1-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.project.ums:UsermanagementLMS:jar:sources:0.0.1-SNAPSHOT
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-09-17 14:58:11.007
+!MESSAGE Could not resolve artifact com.project.ums:UsermanagementLMS:jar:sources:0.0.1-SNAPSHOT
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-09-17 14:58:11.007
+!MESSAGE Missing com.project.ums:UsermanagementLMS:jar:sources:0.0.1-SNAPSHOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:20.246
+!MESSAGE Classpath changed for project: eurekaregistryservice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-17 14:58:20.258
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:20.389
+!MESSAGE Classpath changed for project: eurekaregistryservice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-17 14:58:20.391
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:28.612
+!MESSAGE Classpath changed for project: eurekaregistryservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:28.641
+!MESSAGE Boot project ADDED: eurekaregistryservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:28.696
+!MESSAGE Classpath changed for project: eurekaregistryservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:41.564
+!MESSAGE Classpath changed for project: GatewayLMS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-17 14:58:41.568
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 14:58:41.648
+!MESSAGE Classpath changed for project: GatewayLMS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-17 14:58:41.652
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-09-17 15:00:39.641
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-09-17 15:13:04.792
+!MESSAGE The POM for com.project.ums:UsermanagementLMS:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-09-17 15:13:22.445
+!MESSAGE Could not download javadoc for com.project.ums:UsermanagementLMS:0.0.1-SNAPSHOT
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.project.ums:UsermanagementLMS:jar:javadoc:0.0.1-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.project.ums:UsermanagementLMS:jar:javadoc:0.0.1-SNAPSHOT
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-09-17 15:13:22.446
+!MESSAGE Could not resolve artifact com.project.ums:UsermanagementLMS:jar:javadoc:0.0.1-SNAPSHOT
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-09-17 15:13:22.446
+!MESSAGE Missing com.project.ums:UsermanagementLMS:jar:javadoc:0.0.1-SNAPSHOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:13:34.198
+!MESSAGE Classpath changed for project: GatewayLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:13:34.207
+!MESSAGE Boot project ADDED: GatewayLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:13:35.034
+!MESSAGE Classpath changed for project: GatewayLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:13:35.353
+!MESSAGE Classpath changed for project: GoogleBookAPI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:13:35.354
+!MESSAGE Classpath changed for project: UsermanagementLMS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-17 15:13:35.377
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-09-17 15:13:36.982
+!MESSAGE Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IEditorMarkerService
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-09-17 15:13:37.035
+!MESSAGE An internal error occurred during: "AsyncLiveExpression refresh".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.Activator.getLog()" because the return value of "org.springsource.ide.eclipse.commons.livexp.Activator.getDefault()" is null
+	at org.springsource.ide.eclipse.commons.livexp.Activator.log(Activator.java:63)
+	at org.springsource.ide.eclipse.commons.livexp.core.ObservableSet$Builder$1.compute(ObservableSet.java:48)
+	at org.springsource.ide.eclipse.commons.livexp.core.ObservableSet$Builder$1.compute(ObservableSet.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:74)
+	at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression.syncRefresh(AsyncLiveExpression.java:134)
+	at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression$1.run(AsyncLiveExpression.java:101)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-09-17 15:13:37.120
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-09-17 15:13:37.462
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.m2e.jdt.internal.DownloadSourcesJob
+!SESSION 2024-09-17 15:31:54.058 -----------------------------------------------
+eclipse.buildId=4.22.1.202405011620
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-09-17 15:31:56.332
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-17 15:31:56.745
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-09-17 15:32:01.419
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-17 15:32:02.525
+!MESSAGE Logback config file: C:\Users\Administrator\Documents\NewSpringWorkSpace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-09-17 15:32:03.386
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-17 15:32:03.386
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-09-17 15:32:03.930
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-17 15:32:03.930
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-09-17 15:32:11.763
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:32:13.667
+!MESSAGE Boot project ADDED: AITutor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:32:13.668
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:32:13.729
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:32:13.730
+!MESSAGE Boot project ADDED: GatewayLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:32:13.731
+!MESSAGE Boot project ADDED: assignmentmicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:32:13.732
+!MESSAGE Boot project ADDED: coursemicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:32:13.732
+!MESSAGE Boot project ADDED: eurekaregistryservice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-17 15:32:13.860
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Softwares\sts-4.22.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre\bin\javaw.exe
+-cp
+D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes;D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/Administrator/Documents/NewSpringWorkSpace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1726567333859
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:32:13.861
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-17 15:32:14.010
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10092
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-17 15:32:35.735
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-17 15:32:35.828
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:32:53.500
+!MESSAGE Classpath changed for project: GoogleBookAPI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:32:53.508
+!MESSAGE Boot project ADDED: GoogleBookAPI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 15:32:53.653
+!MESSAGE Classpath changed for project: GoogleBookAPI
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-09-17 16:05:04.976
+!MESSAGE The POM for com.project.ums:UsermanagementLMS:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 16:05:08.149
+!MESSAGE Classpath changed for project: coursemicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 16:05:08.149
+!MESSAGE Classpath changed for project: UsermanagementLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 16:05:08.150
+!MESSAGE Boot project ADDED: UsermanagementLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-17 16:05:09.669
+!MESSAGE Classpath changed for project: GoogleBookAPI
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-09-17 16:05:10.146
+!MESSAGE An internal error occurred during: "AsyncLiveExpression refresh".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.Activator.getLog()" because the return value of "org.springsource.ide.eclipse.commons.livexp.Activator.getDefault()" is null
+	at org.springsource.ide.eclipse.commons.livexp.Activator.log(Activator.java:63)
+	at org.springsource.ide.eclipse.commons.livexp.core.ObservableSet$Builder$1.compute(ObservableSet.java:48)
+	at org.springsource.ide.eclipse.commons.livexp.core.ObservableSet$Builder$1.compute(ObservableSet.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:74)
+	at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression.syncRefresh(AsyncLiveExpression.java:134)
+	at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression$1.run(AsyncLiveExpression.java:101)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-09-17 16:05:11.407
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-09-17 16:05:11.729
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.m2e.jdt.internal.DownloadSourcesJob
+!SESSION 2024-09-18 09:11:37.787 -----------------------------------------------
+eclipse.buildId=4.22.1.202405011620
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-09-18 09:11:40.370
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-18 09:11:40.750
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-09-18 09:11:43.310
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-18 09:11:43.983
+!MESSAGE Logback config file: C:\Users\Administrator\Documents\NewSpringWorkSpace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-09-18 09:11:44.758
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-18 09:11:44.758
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-09-18 09:11:45.224
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-18 09:11:45.224
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-09-18 09:11:49.656
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:50.896
+!MESSAGE Boot project ADDED: AITutor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:50.899
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:51.082
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:51.084
+!MESSAGE Boot project ADDED: GatewayLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:51.085
+!MESSAGE Boot project ADDED: GoogleBookAPI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:51.086
+!MESSAGE Boot project ADDED: UsermanagementLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:51.087
+!MESSAGE Boot project ADDED: assignmentmicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:51.091
+!MESSAGE Boot project ADDED: coursemicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:51.103
+!MESSAGE Boot project ADDED: eurekaregistryservice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 09:11:51.584
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Softwares\sts-4.22.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre\bin\javaw.exe
+-cp
+D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes;D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/Administrator/Documents/NewSpringWorkSpace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1726630911580
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:51.587
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 09:11:51.630
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 8848
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:51.982
+!MESSAGE Classpath changed for project: TechnologyNewsAPI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:11:52.018
+!MESSAGE Classpath changed for project: recomendation-system
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-18 09:11:59.738
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2024-09-18 09:12:15.280
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.jdt.MavenJdtPlugin.getBuildpathManager()" because the return value of "org.eclipse.m2e.jdt.MavenJdtPlugin.getDefault()" is null
+	at org.eclipse.m2e.jdt.internal.MavenClasspathVariableInitializer.initialize(MavenClasspathVariableInitializer.java:33)
+	at org.eclipse.jdt.core.JavaCore.getClasspathVariable(JavaCore.java:4063)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getResolvedVariablePath(JavaModelManager.java:2883)
+	at org.eclipse.jdt.core.JavaCore.getResolvedVariablePath(JavaCore.java:4640)
+	at org.eclipse.jdt.apt.core.internal.VarJarFactoryContainer.<init>(VarJarFactoryContainer.java:33)
+	at org.eclipse.jdt.apt.core.internal.util.FactoryPathUtil.newVarJarFactoryContainer(FactoryPathUtil.java:211)
+	at org.eclipse.jdt.apt.core.internal.util.FactoryPathUtil.decodeFactoryPath(FactoryPathUtil.java:271)
+	at org.eclipse.jdt.apt.core.internal.util.FactoryPathUtil.readFactoryPathFile(FactoryPathUtil.java:117)
+	at org.eclipse.jdt.apt.core.internal.util.FactoryPathUtil.calculatePath(FactoryPathUtil.java:344)
+	at org.eclipse.jdt.apt.core.internal.util.FactoryPathUtil.getFactoryPath(FactoryPathUtil.java:431)
+	at org.eclipse.jdt.apt.core.internal.AnnotationProcessorFactoryLoader.getJava6FactoriesAndAttributesForProject(AnnotationProcessorFactoryLoader.java:456)
+	at org.eclipse.jdt.internal.apt.pluggable.core.dispatch.IdeAnnotationProcessorManager.processAnnotations(IdeAnnotationProcessorManager.java:134)
+	at org.eclipse.jdt.internal.compiler.Compiler.processAnnotations(Compiler.java:952)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:449)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:425)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:411)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.compile(BatchImageBuilder.java:214)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:342)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:79)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:286)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2024-09-18 09:12:15.282
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.core.LiveSetVariable.getValue()" because "this.this$0.applications" is null
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel$4.resourceChanged(LocalBootDashModel.java:199)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:444)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:210)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-09-18 09:12:24.396 -----------------------------------------------
+eclipse.buildId=4.22.1.202405011620
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-09-18 09:12:26.531
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-18 09:12:26.889
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-18 09:12:30.279
+!MESSAGE Logback config file: C:\Users\Administrator\Documents\NewSpringWorkSpace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-09-18 09:12:30.904
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-18 09:12:30.904
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-09-18 09:12:31.364
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-18 09:12:31.366
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-09-18 09:12:35.692
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:36.248
+!MESSAGE Boot project ADDED: AITutor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:36.250
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:36.388
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:36.388
+!MESSAGE Boot project ADDED: GatewayLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:36.389
+!MESSAGE Boot project ADDED: GoogleBookAPI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:36.390
+!MESSAGE Boot project ADDED: UsermanagementLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:36.391
+!MESSAGE Boot project ADDED: assignmentmicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:36.391
+!MESSAGE Boot project ADDED: coursemicroservice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:36.392
+!MESSAGE Boot project ADDED: eurekaregistryservice
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 09:12:36.465
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Softwares\sts-4.22.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre\bin\javaw.exe
+-cp
+D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes;D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\Softwares\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/Administrator/Documents/NewSpringWorkSpace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1726630956463
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:36.465
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 09:12:36.790
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 7096
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:37.455
+!MESSAGE Classpath changed for project: GatewayLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:37.456
+!MESSAGE Classpath changed for project: GoogleBookAPI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:12:37.456
+!MESSAGE Classpath changed for project: UsermanagementLMS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-18 09:12:48.080
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-18 09:12:48.679
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:13:06.365
+!MESSAGE Classpath changed for project: GatewayLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:13:06.377
+!MESSAGE Classpath changed for project: UsermanagementLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:13:11.496
+!MESSAGE Classpath changed for project: TechnologyNewsAPI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:13:11.504
+!MESSAGE Boot project ADDED: TechnologyNewsAPI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:13:20.393
+!MESSAGE Classpath changed for project: UsermanagementLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:13:38.045
+!MESSAGE Classpath changed for project: recomendation-system
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:13:38.054
+!MESSAGE Boot project ADDED: recomendation-system
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:13:38.161
+!MESSAGE Classpath changed for project: recomendation-system
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:15:06.143
+!MESSAGE Classpath changed for project: UsermanagementLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:15:53.698
+!MESSAGE Classpath changed for project: UsermanagementLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:20:48.780
+!MESSAGE Classpath changed for project: GatewayLMS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-18 09:20:50.691
+!MESSAGE Classpath changed for project: GatewayLMS
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-09-18 10:56:42.572
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-09-19 09:49:29.866
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-19 09:49:29.880
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-19 09:50:13.263
+!MESSAGE Classpath changed for project: AITutor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-19 09:50:16.856
+!MESSAGE Classpath changed for project: AITutor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-19 09:50:17.121
+!MESSAGE Classpath changed for project: AITutor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-19 09:52:41.453
+!MESSAGE Classpath changed for project: AITutor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-19 09:55:25.622
+!MESSAGE Classpath changed for project: AITutor
