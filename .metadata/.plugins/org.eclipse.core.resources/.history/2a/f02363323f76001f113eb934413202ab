@@ -1,0 +1,3 @@
+spring.application.name=spring-boot-gemini
+server.port = 3333
+gemini.api.key=AIzaSyAc1MTBYpxtfy1JB_w0kCrSN1I8y-gSR6Q

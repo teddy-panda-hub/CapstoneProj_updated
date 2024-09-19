@@ -1,0 +1,27 @@
+package com.gemini.entity;
+
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class StudentAssignment {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private Integer studentId;
+    private Integer courseId;
+
+    @ElementCollection
+    private List<Integer> marks;
+
+
+
+}

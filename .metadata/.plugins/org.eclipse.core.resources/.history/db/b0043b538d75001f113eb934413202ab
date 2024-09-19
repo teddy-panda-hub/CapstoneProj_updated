@@ -1,0 +1,29 @@
+package com.gemini.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.gemini.serviceImpl.GeminiService;
+
+@RestController
+@CrossOrigin("http://localhost:4200")
+public class GeminiController {
+	
+	@Autowired
+	GeminiService geminiService;
+	
+	@GetMapping("/prompt")
+	public String getResponse(String prompt) {
+		return geminiService.callApi(prompt);
+		
+	}
+	
+	@PostMapping("/evaluateAssignment")
+    public String evaluateAssignment(@RequestParam String question, @RequestParam String answer) {
+        return geminiService.evaluateAssignment(question, answer);
+    }
+}
